@@ -1,35 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-<modelVersion>4.0.0</modelVersion>
-  <name>ReportNG</name>
-  <groupId>org.uncommons</groupId>
-  <artifactId>reportng</artifactId>
-  <version>1.1.5</version>
-  <packaging>jar</packaging>
-  <url>https://reportng.dev.java.net/</url>
+	<modelVersion>4.0.0</modelVersion>
+	<name>ReportNG</name>
+	<groupId>org.uncommons</groupId>
+	<artifactId>reportng</artifactId>
+	<version>1.1.5</version>
+	<packaging>jar</packaging>
+	<url>https://reportng.dev.java.net/</url>
 
-  <licenses>
-    <license>
-      <name>Apache License, Version 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
-  
-  <dependencies>
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>[5.0,)</version>
-    </dependency>
-    <dependency>
-      <groupId>velocity</groupId>
-      <artifactId>velocity</artifactId>
-      <version>1.4</version>
-    </dependency>
-  </dependencies>
-  
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.beust</groupId>
+			<artifactId>jcommander</artifactId>
+			<version>1.48</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/jcommander-1.48.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.10</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/testng-6.10.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>3.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/guice-3.0.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>velocity</groupId>
+			<artifactId>velocity-dep</artifactId>
+			<version>1.4</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/velocity-dep-1.4.jar</systemPath>
+		</dependency>
+	</dependencies>
 </project>
