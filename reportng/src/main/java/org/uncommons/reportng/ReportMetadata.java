@@ -31,7 +31,7 @@ public final class ReportMetadata
 {
     static final String PROPERTY_KEY_PREFIX = "org.uncommons.reportng.";
     static final String TITLE_KEY = PROPERTY_KEY_PREFIX + "title";
-    static final String DEFAULT_TITLE = "Test Results Report";
+    static final String DEFAULT_TITLE = "测试报告";
     static final String COVERAGE_KEY = PROPERTY_KEY_PREFIX + "coverage-report";
     static final String EXCEPTIONS_KEY = PROPERTY_KEY_PREFIX + "show-expected-exceptions";
     static final String OUTPUT_KEY = PROPERTY_KEY_PREFIX + "escape-output";
@@ -40,8 +40,8 @@ public final class ReportMetadata
     static final String LOCALE_KEY = PROPERTY_KEY_PREFIX + "locale";
     static final String VELOCITY_LOG_KEY = PROPERTY_KEY_PREFIX + "velocity-log";
 
-    private static final DateFormat DATE_FORMAT = new SimpleDateFormat("EEEE dd MMMM yyyy");
-    private static final DateFormat TIME_FORMAT = new SimpleDateFormat("HH:mm z");
+    private static final DateFormat DATE_FORMAT = new SimpleDateFormat("EEEE yyyy-MM-dd");
+    private static final DateFormat TIME_FORMAT = new SimpleDateFormat("HH:mm:ss");
     
 
     /**

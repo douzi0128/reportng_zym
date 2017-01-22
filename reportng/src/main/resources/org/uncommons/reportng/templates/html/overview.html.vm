@@ -14,7 +14,7 @@
 <body>
 <div id="meta">
   $messages.getString("generatedBy")
-  $messages.getString("atTime") $meta.reportTime $messages.getString("onDate") $meta.reportDate
+  $messages.getString("atTime") $messages.getString("onDate") $meta.reportDate $meta.reportTime
   <br /><span id="systemInfo">$meta.user&nbsp;/&nbsp;$meta.javaInfo&nbsp;/&nbsp;$meta.platform</span>
 </div>
 

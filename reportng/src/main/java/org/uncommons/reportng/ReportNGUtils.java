@@ -336,7 +336,7 @@ public class ReportNGUtils
                     buffer.append("<br/>\n");
                     break;
                 default:
-                    buffer.append(escapeChar(ch));
+                    buffer.append(ch);
             }
         }
         return buffer.toString();
