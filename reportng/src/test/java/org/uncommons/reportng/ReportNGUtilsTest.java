@@ -1,5 +1,5 @@
 //=============================================================================
-// Copyright 2006-2013 Daniel W. Dyer
+// Copyright 2006-2010 Daniel W. Dyer
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -64,20 +64,4 @@ public class ReportNGUtilsTest
         escapedString = utils.escapeHTMLString(originalString);
 		assert escapedString.equals("&nbsp;&nbsp;&nbsp; ") : "Wrong escaping: " + escapedString;
 	}
-
-
-    @Test
-    public void testFormatIntegerPercentage()
-    {
-        String percentage = utils.formatPercentage(10, 100);
-        assert "10.00%".equals(percentage) : "Wrongly formatted percentage: " + percentage;
-    }
-
-
-    @Test
-    public void testFormatFractionalPercentage()
-    {
-        String percentage = utils.formatPercentage(2, 3);
-        assert "66.67%".equals(percentage) : "Wrongly formatted percentage: " + percentage;
-    }
 }

@@ -13,7 +13,7 @@
   <script type="text/javascript" src="reportng.js"></script>
 </head>
 <body>
-<h1>默认测试用例</h1>
+<h1>$result.testContext.name</h1>
 <p>
   $messages.getString("testDuration"): $utils.formatDuration($utils.getDuration($result.testContext))s
 </p>

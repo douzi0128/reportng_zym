@@ -45,7 +45,7 @@
         <a href="suite${suiteId}_groups.html">$messages.getString("groups")</a>
         #end        
       </div>
-      默认测试方案
+      ${suite.name}
     </th>
   </tr>
   <tr class="columnHeadings">
@@ -68,7 +68,7 @@
   #if (($onlyReportFailures && $failuresExist) || (!$onlyReportFailures))
   <tr class="test">
     <td class="test">
-      <a href="suite${suiteId}_test${velocityCount}_results.html">默认测试用例</a>
+      <a href="suite${suiteId}_test${velocityCount}_results.html">${result.testContext.name}</a>
     </td>
     <td class="duration">
       $utils.formatDuration($utils.getDuration($result.testContext))s
@@ -94,8 +94,8 @@
 
     <td class="passRate">
       #if ($total > 0)
-      #set ($passes = $total - $notPassedTests)
-      $utils.formatPercentage($passes, $total)
+      #set ($passRate = (($total - $notPassedTests) * 100 / $total))
+      $passRate%
       #else
       $messages.getString("notApplicable")
       #end
@@ -127,8 +127,8 @@
 
     <td class="passRate suite">
       #if ($totalTests > 0)
-      #set ($totalPasses = $totalTests - $totalSkipped - $totalFailed)
-      $utils.formatPercentage($totalPasses, $totalTests)
+      #set ($passRate = (($totalTests - $totalSkipped - $totalFailed) * 100 / $totalTests))
+      $passRate%
       #else
       $messages.getString("notApplicable")
       #end

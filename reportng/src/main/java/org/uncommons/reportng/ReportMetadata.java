@@ -1,5 +1,5 @@
 //=============================================================================
-// Copyright 2006-2013 Daniel W. Dyer
+// Copyright 2006-2010 Daniel W. Dyer
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@ public final class ReportMetadata
 {
     static final String PROPERTY_KEY_PREFIX = "org.uncommons.reportng.";
     static final String TITLE_KEY = PROPERTY_KEY_PREFIX + "title";
-    static final String DEFAULT_TITLE = "测试结果";
+    static final String DEFAULT_TITLE = "Test Results Report";
     static final String COVERAGE_KEY = PROPERTY_KEY_PREFIX + "coverage-report";
     static final String EXCEPTIONS_KEY = PROPERTY_KEY_PREFIX + "show-expected-exceptions";
     static final String OUTPUT_KEY = PROPERTY_KEY_PREFIX + "escape-output";

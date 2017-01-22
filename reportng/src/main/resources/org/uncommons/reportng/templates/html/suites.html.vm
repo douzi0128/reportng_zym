@@ -31,7 +31,7 @@
   <thead>
     <tr>
       <th class="header suite" onclick="toggleElement('tests-${velocityCount}', 'table-row-group'); toggle('toggle-${velocityCount}')">
-        <span id="toggle-${velocityCount}" class="toggle">&#x25bc;</span>默认测试方案
+        <span id="toggle-${velocityCount}" class="toggle">&#x25bc;</span>${suite.name}
       </th>
     </tr>
   </thead>
@@ -52,7 +52,7 @@
           <span class="successIndicator" title="$messages.getString("passed.tooltip")">&#x2714;</span>
           #end
         #end
-        <a href="suite${suiteId}_test${velocityCount}_results.html" target="main">默认测试用例</a>
+        <a href="suite${suiteId}_test${velocityCount}_results.html" target="main">$result.testContext.name</a>
       </td>
     </tr>
     #end
