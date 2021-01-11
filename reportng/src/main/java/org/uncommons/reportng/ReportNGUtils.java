@@ -25,6 +25,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.testng.IInvokedMethod;
 import org.testng.ISuite;
 import org.testng.ISuiteResult;
@@ -437,4 +440,27 @@ public class ReportNGUtils
         }
         throw new IllegalStateException("Could not find matching end time.");
     }
+
+    public String getImageString(String s)
+    {
+        String regex = "<img.*>.*</img>";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(s);
+        while (matcher.find()) {
+            String group = matcher.group(1);
+            return group;
+        }
+        return "";
+    }
+
+    /**
+     * 默认展示排序字母排序→按执行顺序排序展示
+     * @param s
+     * @return
+     */
+    public String removeImage(String s)
+    {
+        return  s.replaceAll("<img.*>.*</img>","");
+    }
+
 }
