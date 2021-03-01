@@ -31,7 +31,7 @@ public final class ReportMetadata
 {
     static final String PROPERTY_KEY_PREFIX = "org.uncommons.reportng.";
     static final String TITLE_KEY = PROPERTY_KEY_PREFIX + "title";
-    static final String DEFAULT_TITLE = "测试报告";
+    static final String DEFAULT_TITLE = "Test Result";
     static final String COVERAGE_KEY = PROPERTY_KEY_PREFIX + "coverage-report";
     static final String EXCEPTIONS_KEY = PROPERTY_KEY_PREFIX + "show-expected-exceptions";
     static final String OUTPUT_KEY = PROPERTY_KEY_PREFIX + "escape-output";
