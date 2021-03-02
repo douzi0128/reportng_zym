@@ -5,8 +5,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<name>ReportNG</name>
 	<groupId>org.zym</groupId>
-	<artifactId>reportng-z</artifactId>
-	<version>2.0.2</version>
+	<artifactId>reportng-zym</artifactId>
+	<version>2.1.0</version>
 	<packaging>jar</packaging>
 	<url>https://reportng.dev.java.net/</url>
 
